@@ -1,6 +1,38 @@
-/* ====================
+/* ===================================
+   NOT YOUR COLLEGE - STYLE.CSS
+   PART 1 (Lines 1 - 150)
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111111;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+/* ==========================
+   Container
+========================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ==========================
    Navbar
-==================== */
+========================== */
 
 .navbar{
     display:flex;
@@ -34,13 +66,261 @@
 }
 
 .nav-links a:hover{
-    color:#ff6b00;
+    color:#FF6B00;
 }
 
+/* ==========================
+   Common Sections
+========================== */
 
-/* ====================
+section{
+    padding:80px 0;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+h2{
+    font-size:2.2rem;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+h3{
+    margin-bottom:15px;
+}
+
+p{
+    color:#d1d1d1;
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#FF6B00;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff8c33;
+    transform:translateY(-3px);
+}
+
+/* ==========================
+   Free Content Section
+========================== */
+
+.free-content{
+    text-align:center;
+    background:#111111;
+}
+
+.free-content h1{
+    margin-bottom:15px;
+}
+
+.free-content p{
+    font-size:1.05rem;
+}
+
+/* ==========================
+   Courses Section
+========================== */
+
+.courses-preview{
+    text-align:center;
+    background:#171717;
+}
+
+.courses-preview p{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Social Links
+========================== */
+
+.social-links{
+    text-align:center;
+    background:#111111;
+}
+
+.social-icons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.social-icons a{
+    color:white;
+    font-size:2rem;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#FF6B00;
+    transform:scale(1.15);
+}
+
+/* ==========================
+   Connect Section
+========================== */
+
+.connect-section{
+    text-align:center;
+    background:#171717;
+}
+
+.connect-section p{
+    margin-bottom:10px;
+}
+
+/* ==========================
+   Founder Section
+========================== */
+
+.founder-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+}
+/* ==========================
+   Founder Image
+========================== */
+
+.founder-image{
+    flex:1;
+    text-align:center;
+}
+
+.founder-image img{
+    width:100%;
+    max-width:380px;
+    height:auto;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 0 25px rgba(255,107,0,0.25);
+}
+
+.founder-content{
+    flex:1;
+}
+
+.founder-content h1{
+    text-align:left;
+    margin-bottom:10px;
+}
+
+.founder-content h2{
+    text-align:left;
+    margin-top:30px;
+}
+
+.founder-content h3{
+    color:#FF6B00;
+}
+
+.founder-content p{
+    text-align:left;
+    margin:15px 0;
+    max-width:none;
+}
+
+/* ==========================
+   Connect Page
+========================== */
+
+.connect-page{
+    min-height:70vh;
+    text-align:center;
+}
+
+.connect-page h1{
+    margin-bottom:15px;
+}
+
+.social-cards{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.social-card{
+    background:#1a1a1a;
+    border:1px solid #222;
+    border-radius:15px;
+    padding:30px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.social-card:hover{
+    transform:translateY(-5px);
+    border-color:#FF6B00;
+}
+
+.social-card i{
+    font-size:2.5rem;
+    color:#FF6B00;
+    margin-bottom:15px;
+}
+
+.social-card h3{
+    margin-bottom:10px;
+}
+
+.social-card p{
+    color:#bdbdbd;
+}
+
+/* ==========================
+   Courses Page
+========================== */
+
+.coming-soon{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.coming-soon i{
+    font-size:5rem;
+    color:#FF6B00;
+    margin-bottom:20px;
+}
+
+.coming-soon p{
+    margin-bottom:10px;
+}
+
+/* ==========================
    Footer
-==================== */
+========================== */
 
 footer{
     background:#0b0b0b;
@@ -57,15 +337,70 @@ footer{
 
 footer p{
     color:#a5a5a5;
-    font-size:.95rem;
+    font-size:0.95rem;
+}
+
+/* ==========================
+   Utility Classes
+========================== */
+
+.text-center{
+    text-align:center;
+}
+
+.mt-1{
+    margin-top:10px;
+}
+
+.mt-2{
+    margin-top:20px;
+}
+
+.mt-3{
+    margin-top:30px;
+}
+
+.mb-1{
+    margin-bottom:10px;
+}
+
+.mb-2{
+    margin-bottom:20px;
+}
+
+.mb-3{
+    margin-bottom:30px;
+}
+
+/* ==========================
+   Smooth Hover Effects
+========================== */
+
+a,
+button,
+.btn,
+.social-card,
+.social-icons a{
+    transition:all .3s ease;
+}
+
+/* ==========================
+   Images
+========================== */
+
+img{
+    max-width:100%;
+    display:block;
 }
 
 
-/* ====================
+/* ==========================
    Mobile Responsive
-==================== */
+========================== */
 
 @media(max-width:768px){
+
+    /* Navbar */
 
     .navbar{
         flex-direction:column;
@@ -78,10 +413,16 @@ footer p{
     }
 
     .nav-links{
-        gap:15px;
+        gap:12px;
         flex-wrap:wrap;
         justify-content:center;
     }
+
+    .nav-links a{
+        font-size:0.95rem;
+    }
+
+    /* Typography */
 
     h1{
         font-size:2rem;
@@ -91,19 +432,39 @@ footer p{
         font-size:1.6rem;
     }
 
-    p{
-        font-size:.95rem;
+    h3{
+        font-size:1.1rem;
     }
+
+    p{
+        font-size:0.95rem;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+    /* Founder Page */
 
     .founder-section{
         flex-direction:column;
         text-align:center;
         gap:30px;
+        width:95%;
     }
 
     .founder-image img{
         max-width:280px;
+        margin:auto;
     }
+
+    .founder-content h1,
+    .founder-content h2,
+    .founder-content p{
+        text-align:center;
+    }
+
+    /* Social Icons */
 
     .social-icons{
         gap:20px;
@@ -113,11 +474,123 @@ footer p{
         font-size:1.8rem;
     }
 
+    /* Connect Cards */
+
+    .social-cards{
+        grid-template-columns:1fr;
+    }
+
     .social-card{
         padding:25px;
     }
 
+    /* Footer */
+
     .footer-logo img{
         width:80px;
     }
+
+}
+
+/* ==========================
+   Tablet Responsive
+========================== */
+
+@media(min-width:769px) and (max-width:1024px){
+
+    .navbar{
+        padding:12px 4%;
+    }
+
+    .logo img{
+        width:85px;
+    }
+
+    .founder-section{
+        gap:40px;
+    }
+
+    .founder-image img{
+        max-width:320px;
+    }
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+}
+
+/* ==========================
+   Desktop Improvements
+========================== */
+
+@media(min-width:1200px){
+
+    .container{
+        max-width:1200px;
+    }
+
+    .founder-image img:hover{
+        transform:scale(1.03);
+        transition:.4s;
+    }
+
+}
+
+/* ==========================
+   Selection Color
+========================== */
+
+::selection{
+    background:#FF6B00;
+    color:white;
+}
+
+/* ==========================
+   Scrollbar
+========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#FF6B00;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#ff8c33;
+}
+
+/* ==========================
+   Final Touches
+========================== */
+
+body{
+    overflow-x:hidden;
+}
+
+a{
+    -webkit-tap-highlight-color:transparent;
+}
+
+button{
+    cursor:pointer;
+}
+
+.btn:active{
+    transform:scale(.98);
+}
+
+.social-card:active{
+    transform:scale(.98);
 }
