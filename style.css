@@ -1,22 +1,3 @@
-/* Google Font */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#111111;
-    color:#ffffff;
-    line-height:1.6;
-}
-
 /* ====================
    Navbar
 ==================== */
@@ -25,7 +6,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 8%;
+    padding:10px 5%;
     background:#0b0b0b;
     border-bottom:1px solid #222;
     position:sticky;
@@ -34,7 +15,7 @@ body{
 }
 
 .logo img{
-    width:160px;
+    width:90px;
     height:auto;
     object-fit:contain;
 }
@@ -42,7 +23,7 @@ body{
 .nav-links{
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:25px;
 }
 
 .nav-links a{
@@ -56,200 +37,6 @@ body{
     color:#ff6b00;
 }
 
-/* ====================
-   Common Sections
-==================== */
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-section{
-    padding:80px 0;
-    text-align:center;
-}
-
-h1{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-h2{
-    font-size:2.2rem;
-    margin-bottom:20px;
-}
-
-h3{
-    margin-bottom:15px;
-}
-
-p{
-    color:#d1d1d1;
-    max-width:800px;
-    margin:auto;
-}
-
-/* ====================
-   Button
-==================== */
-
-.btn{
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 30px;
-    background:#ff6b00;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#ff8c33;
-    transform:translateY(-3px);
-}
-
-/* ====================
-   Homepage Sections
-==================== */
-
-.free-content,
-.courses-preview,
-.connect-section{
-    background:#111111;
-}
-
-.social-links{
-    background:#171717;
-}
-
-/* ====================
-   Social Icons
-==================== */
-
-.social-icons{
-    margin-top:30px;
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-.social-icons a{
-    color:#ffffff;
-    font-size:2rem;
-    transition:.3s;
-}
-
-.social-icons a:hover{
-    color:#ff6b00;
-    transform:scale(1.15);
-}
-
-/* ====================
-   Founder Page
-==================== */
-
-.founder-section{
-    width:90%;
-    max-width:1200px;
-    margin:80px auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:60px;
-    text-align:left;
-}
-
-.founder-image img{
-    width:100%;
-    max-width:380px;
-    height:auto;
-    border-radius:20px;
-    object-fit:cover;
-    box-shadow:0 0 25px rgba(255,107,0,.25);
-}
-
-.founder-content{
-    flex:1;
-}
-
-.founder-content h1{
-    margin-bottom:10px;
-}
-
-.founder-content h2{
-    margin-top:30px;
-}
-
-.founder-content p{
-    margin:15px 0;
-    max-width:none;
-}
-
-/* ====================
-   Connect Page
-==================== */
-
-.connect-page{
-    min-height:70vh;
-}
-
-.social-cards{
-    margin-top:40px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.social-card{
-    text-decoration:none;
-    color:white;
-    background:#1a1a1a;
-    padding:30px;
-    border-radius:15px;
-    transition:.3s;
-    border:1px solid #222;
-}
-
-.social-card:hover{
-    transform:translateY(-5px);
-    border-color:#ff6b00;
-}
-
-.social-card i{
-    font-size:2.5rem;
-    color:#ff6b00;
-    margin-bottom:15px;
-}
-
-.social-card h3{
-    margin-bottom:10px;
-}
-
-.social-card p{
-    color:#bdbdbd;
-}
-
-/* ====================
-   Courses Page
-==================== */
-
-.coming-soon{
-    min-height:70vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-.coming-soon i{
-    font-size:5rem;
-    color:#ff6b00;
-    margin-bottom:20px;
-}
 
 /* ====================
    Footer
@@ -258,20 +45,21 @@ p{
 footer{
     background:#0b0b0b;
     text-align:center;
-    padding:30px 20px;
+    padding:20px;
     border-top:1px solid #222;
 }
 
 .footer-logo img{
-    width:140px;
+    width:90px;
     height:auto;
-    margin-bottom:15px;
+    margin-bottom:10px;
 }
 
 footer p{
     color:#a5a5a5;
     font-size:.95rem;
 }
+
 
 /* ====================
    Mobile Responsive
@@ -281,12 +69,12 @@ footer p{
 
     .navbar{
         flex-direction:column;
-        gap:15px;
-        padding:15px;
+        gap:10px;
+        padding:10px;
     }
 
     .logo img{
-        width:130px;
+        width:80px;
     }
 
     .nav-links{
@@ -327,5 +115,9 @@ footer p{
 
     .social-card{
         padding:25px;
+    }
+
+    .footer-logo img{
+        width:80px;
     }
 }
